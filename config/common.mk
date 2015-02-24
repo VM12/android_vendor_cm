@@ -73,7 +73,7 @@ endif
 
 # Copy over the changelog to the device
 PRODUCT_COPY_FILES += \
-    vendor/cm/CHANGELOG.mkdn:system/etc/CHANGELOG-CM.txt
+    vendor/cm/CHANGELOG.mkdn:system/etc/CHANGELOG-RR.txt
 
 # Backup Tool
 ifneq ($(WITH_GMS),true)
@@ -120,6 +120,10 @@ PRODUCT_COPY_FILES += \
 
 # T-Mobile theme engine
 include vendor/cm/config/themes_common.mk
+
+# SlothWalls
+PRODUCT_PACKAGES += \
+    SlothWalls
 
 # Required CM packages
 PRODUCT_PACKAGES += \
@@ -212,7 +216,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 PRODUCT_PACKAGE_OVERLAYS += vendor/cm/overlay/common
 
-PRODUCT_VERSION_MAJOR = 12
+PRODUCT_VERSION_MAJOR = VM12-1.0.0
 PRODUCT_VERSION_MINOR = 0
 PRODUCT_VERSION_MAINTENANCE = 0-RC0
 
@@ -254,7 +258,7 @@ ifdef CM_BUILDTYPE
     endif
 else
     # If CM_BUILDTYPE is not defined, set to UNOFFICIAL
-    CM_BUILDTYPE := UNOFFICIAL
+    CM_BUILDTYPE := 
     CM_EXTRAVERSION :=
 endif
 
@@ -283,9 +287,9 @@ else
 endif
 
 PRODUCT_PROPERTY_OVERRIDES += \
-  ro.cm.version=$(CM_VERSION) \
-  ro.cm.releasetype=$(CM_BUILDTYPE) \
-  ro.modversion=$(CM_VERSION) \
+  ro.rr.version=$(CM_BUILD) \
+  ro.rr_modversion=$(CM_BUILDTYPE) \
+  ro.vm12.version=vm12_1.0.0_LP_5.0-$(shell date -u +%Y%m%d) \
   ro.cmlegal.url=https://www.cyanogenmod.org/docs/privacy
 
 -include vendor/cm-priv/keys/keys.mk
