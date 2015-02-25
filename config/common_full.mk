@@ -11,7 +11,6 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/cm/overlay/dictionaries
 PRODUCT_PACKAGES += \
     Galaxy4 \
     NoiseField \
-    PhaseBeam \
     VisualizationWallpapers \
     PhotoTable \
     SoundRecorder \
