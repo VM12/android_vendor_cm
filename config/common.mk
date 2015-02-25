@@ -143,14 +143,9 @@ PRODUCT_PACKAGES += \
     Launcher3 \
     Trebuchet \
     AudioFX \
-    CMWallpapers \
     CMFileManager \
     Eleven \
-    LockClock \
-    CMUpdater \
-    CMAccount \
-    CMHome \
-    CyanogenSetupWizard
+    LockClock
 
 # CM Hardware Abstraction Framework
 PRODUCT_PACKAGES += \
