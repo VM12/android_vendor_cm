@@ -216,7 +216,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 PRODUCT_PACKAGE_OVERLAYS += vendor/cm/overlay/common
 
-PRODUCT_VERSION_MAJOR = VM12-1.0.0
+PRODUCT_VERSION_MAJOR = VM12
 PRODUCT_VERSION_MINOR = 0
 PRODUCT_VERSION_MAINTENANCE = 0-RC0
 
@@ -258,7 +258,7 @@ ifdef CM_BUILDTYPE
     endif
 else
     # If CM_BUILDTYPE is not defined, set to UNOFFICIAL
-    CM_BUILDTYPE := 
+    CM_BUILDTYPE := 1.0.0
     CM_EXTRAVERSION :=
 endif
 
@@ -289,7 +289,7 @@ endif
 PRODUCT_PROPERTY_OVERRIDES += \
   ro.rr.version=$(CM_BUILD) \
   ro.rr_modversion=$(CM_BUILDTYPE) \
-  ro.vm12.version=vm12_1.0.0_LP_5.0-$(shell date -u +%Y%m%d) \
+  ro.vm12.version=LP_5.0-$(shell date -u +%Y%m%d) \
   ro.cmlegal.url=https://www.cyanogenmod.org/docs/privacy
 
 -include vendor/cm-priv/keys/keys.mk
