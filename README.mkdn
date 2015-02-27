@@ -1,7 +1,4 @@
 Vm12
 ===========
 
-el)
-Commit your patches in a single commit. Squash multiple commit using this command: git rebase -i HEAD~<# of commits>
-
 
