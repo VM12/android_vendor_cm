@@ -1,5 +1,5 @@
 # Inherit common CM stuff
-$(call inherit-product, vendor/cm/config/common_full.mk)
+$(call inherit-product, vendor/vm12/config/common_full.mk)
 
 # Default notification/alarm sounds
 PRODUCT_PROPERTY_OVERRIDES += \
