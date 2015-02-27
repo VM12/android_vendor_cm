@@ -72,7 +72,7 @@ ifneq ($(WITH_GMS),true)
 PRODUCT_COPY_FILES += \
     vendor/vm12/prebuilt/common/bin/backuptool.sh:install/bin/backuptool.sh \
     vendor/vm12/prebuilt/common/bin/backuptool.functions:install/bin/backuptool.functions \
-    vendor/vm12/prebuilt/common/bin/50-VM12.sh:system/addon.d/50-VM12.sh \
+    vendor/vm12/prebuilt/common/bin/50-cm.sh:system/addon.d/50-cm.sh \
     vendor/vm12/prebuilt/common/bin/blacklist:system/addon.d/blacklist
 endif
 
@@ -91,7 +91,7 @@ PRODUCT_COPY_FILES += \
 
 # VM12-specific init file
 PRODUCT_COPY_FILES += \
-    vendor/vm12/prebuilt/common/etc/init.local.rc:root/init.VM12.rc
+    vendor/vm12/prebuilt/common/etc/init.local.rc:root/init.cm.rc
 
 # Bring in camera effects
 PRODUCT_COPY_FILES +=  \
@@ -193,7 +193,7 @@ PRODUCT_PACKAGES += \
 # These packages are excluded from user builds
 ifneq ($(TARGET_BUILD_VARIANT),user)
 PRODUCT_PACKAGES += \
-    proVM12em \
+    procmem \
     procrank \
     su
 endif
