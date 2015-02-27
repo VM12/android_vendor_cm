@@ -1,3 +1,3 @@
-add_lunch_combo vm12_kltespr-eng
-add_lunch_combo vm12_hammerhead-eng
-add_lunch_combo vm12_bacon-eng
+add_lunch_combo vm12_kltespr-userdebug
+add_lunch_combo vm12_hammerhead-userdebug
+add_lunch_combo vm12_bacon-userdebug
