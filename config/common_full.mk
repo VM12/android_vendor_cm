@@ -5,7 +5,7 @@ $(call inherit-product, vendor/vm12/config/common.mk)
 include vendor/vm12/config/cm_audio.mk
 
 # Include CM LatinIME dictionaries
-PRODUCT_PACKAGE_OVERLAYS += vendor/cm/overlay/dictionaries
+PRODUCT_PACKAGE_OVERLAYS += vendor/vm12/overlay/dictionaries
 
 # Optional CM packages
 PRODUCT_PACKAGES += \
