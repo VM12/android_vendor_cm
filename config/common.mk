@@ -135,7 +135,7 @@ PRODUCT_PACKAGES += \
     Launcher3 \
     Trebuchet \
     AudioFX \
-    VM12FileManager \
+    CMFileManager \
     Eleven \
     LockClock
 
