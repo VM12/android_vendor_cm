@@ -18,9 +18,6 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from bacon device
 $(call inherit-product, device/oneplus/bacon/bacon.mk)
 
-# Nocturnal Stuff
-$(call inherit-product, vendor/vm12/config/maxx_audio.mk)
-
 # Enhanced NFC
 $(call inherit-product, vendor/vm12/config/nfc_enhanced.mk)
 
@@ -43,3 +40,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += TARGET_DEVICE=A0001 PRODUCT_NAME=bacon
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1920
 TARGET_SCREEN_WIDTH := 1080
+
+# Nocturnal Stuff
+include vendor/vm12/config/maxx_audio.mk
