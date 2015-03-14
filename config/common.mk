@@ -274,8 +274,8 @@ else
 endif
 
 PRODUCT_PROPERTY_OVERRIDES += \
-  ro.rr.version=$(VM12_BUILD) \
-  ro.rr_modversion=$(VM12_BUILDTYPE) \
+  ro.vm12.version=$(VM12_BUILD) \
+  ro.vm12_modversion=$(VM12_BUILDTYPE) \
   ro.vm12.version=LP_5.0-$(shell date -u +%Y%m%d) \
   ro.VM12legal.url=https://www.cyanogenmod.org/docs/privacy
 
