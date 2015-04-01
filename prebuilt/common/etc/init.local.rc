@@ -12,7 +12,7 @@ on post-fs-data
     mkdir /data/.ssh 0750 root shell
 
     # Run sysinit
-    start sysinit
+    start userinit
 
 on boot
     # interactive governor
@@ -114,8 +114,8 @@ on property:service.adb.tcp.port=-1
     stop adbd
     start adbd
 
-# sysinit (/system/etc/init.d)
-service sysinit /system/bin/sysinit
-    user root
+service userinit /system/xbin/busybox run-parts /system/etc/init.d
     oneshot
-    disabled
+    class late_start
+    user root
+    group root
