@@ -1,10 +1,10 @@
 #
 # This policy configuration will be used by all products that
-# inherit from VM
+# inherit from CM
 #
 
 BOARD_SEPOLICY_DIRS += \
-    vendor/vm12/sepolicy
+    vendor/cm/sepolicy
 
 BOARD_SEPOLICY_UNION += \
     file.te \

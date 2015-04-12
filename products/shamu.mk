@@ -11,7 +11,7 @@ $(call inherit-product, vendor/vm12/config/nfc_enhanced.mk)
 # Inherit device configuration
 $(call inherit-product, device/moto/shamu/aosp_shamu.mk)
 
-DEVICE_PACKAGE_OVERLAYS += device/moto/shamu/overlay-cm
+DEVICE_PACKAGE_OVERLAYS += device/moto/shamu/overlay-vm12
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_NAME := vm12_shamu
@@ -20,5 +20,5 @@ PRODUCT_MODEL := Nexus 6
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=shamu \
-    BUILD_FINGERPRINT=google/shamu/shamu:5.0.1/LRX22C/1602158:user/release-keys \
-    PRIVATE_BUILD_DESC="shamu-user 5.0.1 LRX22C 1602158 release-keys"
+    BUILD_FINGERPRINT=google/shamu/shamu:5.1/LMY47I/1767468:user/release-keys \
+    PRIVATE_BUILD_DESC="shamu-user 5.1 LMY47I 1767468 release-keys"

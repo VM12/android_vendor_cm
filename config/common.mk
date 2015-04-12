@@ -135,7 +135,6 @@ PRODUCT_PACKAGES += \
     Launcher3 \
     Trebuchet \
     AudioFX \
-    CMFileManager \
     Eleven \
     LockClock
 
@@ -204,7 +203,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PACKAGE_OVERLAYS += vendor/vm12/overlay/common
 
 PRODUCT_VERSION_MAJOR = VM12
-PRODUCT_VERSION_MINOR = 0
+PRODUCT_VERSION_MINOR = 1
 PRODUCT_VERSION_MAINTENANCE = 0-RC0
 
 # Set VM12_BUILDTYPE from the env RELEASE_TYPE, for jenkins compat
@@ -277,7 +276,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
   ro.vm12.version=$(VM12_BUILD) \
   ro.vm12_modversion=$(VM12_BUILDTYPE) \
   ro.vm12.version=LP_5.0-$(shell date -u +%Y%m%d) \
-  ro.VM12legal.url=https://www.cyanogenmod.org/docs/privacy
+  ro.VM12legal.url=https://cyngn.com/legal/privacy-policy
 
 -include vendor/VM12-priv/keys/keys.mk
 
