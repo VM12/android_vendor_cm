@@ -93,10 +93,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/vm12/prebuilt/common/etc/init.local.rc:root/init.cm.rc
 
-# Gesture Typing 
-PRODUCT_COPY_FILES += \
-    vendor/cm/prebuilt/common/lib/libjni_latinimegoogle.so:system/lib/libjni_latinimegoogle.so
-
 # Bring in camera effects
 PRODUCT_COPY_FILES +=  \
     vendor/vm12/prebuilt/common/media/LMprec_508.emd:system/media/LMprec_508.emd \
