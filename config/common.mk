@@ -95,7 +95,7 @@ PRODUCT_COPY_FILES += \
 
 # Gesture Typing 
 PRODUCT_COPY_FILES += \
-    vendor/cm/prebuilt/common/lib/libjni_latinimegoogle.so:system/lib/libjni_latinimegoogle.so
+    vendor/vm12/prebuilt/common/lib/libjni_latinimegoogle.so:system/lib/libjni_latinimegoogle.so
 
 # Bring in camera effects
 PRODUCT_COPY_FILES +=  \
