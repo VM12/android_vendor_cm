@@ -125,7 +125,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     Development \
     LatinIME \
-    BluetoothExt
+    BluetoothExt \
+    Profiles
 
 # Optional VM12 packages
 PRODUCT_PACKAGES += \
@@ -284,8 +285,8 @@ endif
 
 PRODUCT_PROPERTY_OVERRIDES += \
   ro.vm12.version=$(VM12_BUILD) \
+  ro.vm12.releasetype=$(VM12_BUILDTYPE) \
   ro.vm12_modversion=$(VM12_BUILDTYPE) \
-  ro.vm12.version=LP_5.0-$(shell date -u +%Y%m%d) \
   ro.VM12legal.url=https://cyngn.com/legal/privacy-policy
 
 -include vendor/VM12-priv/keys/keys.mk
