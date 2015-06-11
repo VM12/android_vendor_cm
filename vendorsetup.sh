@@ -3,3 +3,5 @@ add_lunch_combo vm12_hammerhead-userdebug
 add_lunch_combo vm12_bacon-userdebug
 add_lunch_combo vm12_shamu-userdebug
 add_lunch_combo vm12_klte-userdebug
+add_lunch_combo vm12_kltedv-userdebug
+add_lunch_combo vm12_klteusc-userdebug

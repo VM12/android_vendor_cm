@@ -97,6 +97,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/vm12/prebuilt/common/lib/libjni_latinimegoogle.so:system/lib/libjni_latinimegoogle.so
 
+# Sloth Walls
+PRODUCT_COPY_FILES += \
+    vendor/vm12/prebuilt/common/slothwalls/com.nocturnal.sloth.apk:system/app/SlothWalls/com.nocturnal.sloth.apk
+
 # Bring in camera effects
 PRODUCT_COPY_FILES +=  \
     vendor/vm12/prebuilt/common/media/LMprec_508.emd:system/media/LMprec_508.emd \
@@ -116,10 +120,6 @@ PRODUCT_COPY_FILES += \
 
 # T-Mobile theme engine
 include vendor/vm12/config/themes_common.mk
-
-# SlothWalls
-PRODUCT_PACKAGES += \
-    SlothWalls
 
 # Required VM12 packages
 PRODUCT_PACKAGES += \

@@ -40,6 +40,3 @@ PRODUCT_BUILD_PROP_OVERRIDES += TARGET_DEVICE=A0001 PRODUCT_NAME=bacon
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1920
 TARGET_SCREEN_WIDTH := 1080
-
-# Nocturnal Stuff
-include vendor/vm12/config/maxx_audio.mk
